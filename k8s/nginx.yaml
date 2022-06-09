@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - image: xeusteerapat/nginx-react:lastest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: nginx
         ports:
         - containerPort: 80

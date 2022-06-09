@@ -54,7 +54,7 @@ spec:
               name: env-vars
         image: xeusteerapat/fastify-server:lastest
         name: fastify-server
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         resources: {}
