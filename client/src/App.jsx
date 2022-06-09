@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch('http://localhost/users');
+      const res = await fetch('http://localhost:8080/users');
       const data = await res.json();
 
       setUsers(data);
