@@ -10,6 +10,7 @@ RUN yarn build
 ##### Stage 2
 FROM nginx:alpine
 VOLUME /var/cache/nginx
+EXPOSE 3000
 COPY --from=node /app/dist /usr/share/nginx/html
 COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
