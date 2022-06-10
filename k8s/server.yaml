@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     app: fastify-server
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - name: "8080"
     port: 8080
@@ -23,7 +23,6 @@ data:
   NODE_ENV: "production"
   CONTAINER: "true"
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
