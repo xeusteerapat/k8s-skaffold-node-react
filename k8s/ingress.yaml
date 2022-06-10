@@ -8,7 +8,8 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   rules:
-    - http:
+    - host: 7aa85d54-4644-45ef-bcbd-88783dfc0e20.k8s.civo.com
+      http:
         paths:
           - path: /?(.*)
             pathType: Prefix
